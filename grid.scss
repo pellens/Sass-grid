@@ -1,0 +1,81 @@
+@import "compass/css3";
+
+$max_width       : 1200px;
+$grid_gutter     : 2%;
+
+$viewports_width : '960px', '800px', '600px', '400px';
+$viewports_title : 'desktop', 'tablet', 'phablet', 'mobile';
+
+.row {
+    width: 100%;
+    max-width: $max_width;
+    margin: 0 auto;
+    padding: 0;
+
+    // Grid
+    *[class*='grid-'] {
+        @include box-sizing(border-box);
+        float: left;
+        background-color: #CCC;
+        margin-bottom: 10px;
+        padding:20px 0;
+    }
+
+    // Cols
+    *[class*='col-'] {
+        float: left;
+        @include box-sizing(border-box);
+        margin-left: $grid_gutter/2;
+        margin-right: $grid_gutter/2;
+        background-color: #EEE;
+        margin-bottom: 10px;
+        padding:20px 0;
+
+        &.alpha { margin-left: 0%; }
+        &.omega { margin-right: 0%; }
+    }
+
+    // Cols loop
+    @for $a from 1 through 12 {
+        .col-#{$a} {
+            width: (100% / 12 * $a)-$grid_gutter;
+
+            &.alpha,
+            &.omega  { width: (100% / 12 * $a) - $grid_gutter/2; }
+        }
+
+        // Push collumns
+        *[class*='col-'].col-push-#{$a} {
+            margin-left:(100% / 12 * $a)+$grid_gutter/2;
+        }
+    }
+
+    // Grid push
+    @for $i from 1 through 100 {
+        .grid-#{$i*1} { width: #{$i*1%}; }
+        .push-#{$i*1} { margin-left: #{$i*1%}; }
+    }
+
+    @for $vp from 1 through length($viewports_width) {
+
+        @media screen and (max-width: #{nth($viewports_width, $vp)}) {
+
+            *[class*='col-'].col-#{nth($viewports_title, $vp)}-push-0 {
+                margin-left:$grid_gutter/2;
+            }
+
+            @for $a from 1 through 12 {
+                .col-#{nth($viewports_title, $vp)}-#{$a} {
+                    width: (100% / 12 * $a)-$grid_gutter;
+
+                    &.alpha,
+                    &.omega  { width: (100% / 12 * $a) - $grid_gutter/2; }
+                }
+                // Push collumns
+                *[class*='col-'].col-#{nth($viewports_title, $vp)}-push-#{$a} {
+                    margin-left:(100% / 12 * $a)+$grid_gutter/2;
+                }
+            }
+        }
+    }
+}

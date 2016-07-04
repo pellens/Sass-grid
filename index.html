@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>Sass Grid</title>
+
+        <meta http-equiv="Content-Type"    content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta name="author" content="Gert Pellens">
+
+        <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" type="text/css" href="grid.css"/>
+
+        <style>
+        html, body {
+            font-family: Helvetica;
+            font-size: 15px;
+            line-height: 25px;
+            margin: 0;
+            padding: 0;
+        }
+        *[class*='col-'] {
+            padding:20px 0;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #EEE;
+        }
+        *[class*='grid-'] {
+            padding:20px 0;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #CCC;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="grid-50">Grid-50</div>
+            <div class="grid-50">Grid-50</div>
+
+            <div class="grid-40">Grid-40</div>
+            <div class="grid-16 push-2">Grid-16 push-2</div>
+            <div class="grid-40 push-2">Grid-40</div>
+
+            <div class="col-6 col-tablet-12">Col-6</div>
+            <div class="col-6 col-tablet-12">Col-6</div>
+
+            <div class="col-5 col-tablet-6">Col-5</div>
+            <div class="col-5 col-push-2 col-tablet-6 col-tablet-push-0">Col-5 col-push-2</div>
+
+            <div class="col-4">Col-4</div>
+            <div class="col-4">Col-4</div>
+            <div class="col-4">Col-4</div>
+
+            <div class="col-3">Col-3</div>
+            <div class="col-3">Col-3</div>
+            <div class="col-3">Col-3</div>
+            <div class="col-3">Col-3</div>
+
+            <div class="col-2">Col-2</div>
+            <div class="col-2">Col-2</div>
+            <div class="col-2">Col-2</div>
+            <div class="col-2">Col-2</div>
+            <div class="col-2">Col-2</div>
+            <div class="col-2">Col-2</div>
+
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+            <div class="col-1 col-mobile-12">Col-1</div>
+
+            <div class="col-6">
+                <div class="grid-50">Grid-50</div>
+                <div class="grid-50">Grid-50</div>
+            </div>
+
+            <div class="col-6">
+                <div class="grid-50">Grid-50</div>
+                <div class="grid-50">Grid-50</div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
