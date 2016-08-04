@@ -87,7 +87,7 @@ Define your maximum container width in which your grid will deliver it's awesome
 ##4. Generated classes
 
 | Class  | Values | Example | Viewport | Type |
-|--------|--------|---------|-------------|-|
+|--------|--------|---------|-------------|---|
 | grid-* | 1 - 100 | grid-50 | Default | Percentage |
 | desktop-* | 1 - 100 | desktop-25 | < 960px | Percentage |
 | tablet-* | 1 - 100 | tablet-50 | < 800px | Percentage |
