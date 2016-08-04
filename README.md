@@ -10,15 +10,29 @@ A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert
 ##1. Column based grid
 
     <div class="row">
+
+        // Basic markup
         <div class="col-6">6 columns wide</div>
         <div class="col-6">6 columns wide</div>
+
+        // With viewport classes
+        <div class="col-6 col-tablet-8">6 columns wide, 8 columns on tablet viewport</div>
+        <div class="col-6 col-tablet-4">6 columns wide, 4 columns on tablet viewport</div>
+
     </div>
 
 ##2. Percentage based grid
 
     <div class="row">
+
+        // Basic markup
         <div class="grid-50">50% wide</div>
         <div class="grid-50">50% wide</div>
+
+        // With viewport classes
+        <div class="grid-50 tablet-100">50% wide, 100% on tablet viewport</div>
+        <div class="grid-50 tablet-100">50% wide, 100% on tablet viewport</div>
+
     </div>
 
 ##3. Customize
