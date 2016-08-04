@@ -40,7 +40,8 @@ A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert
 ##3. Customize
 
 Since every client or project has it's *own requirements*, we have to take this into account when setting up the gridsystem. You can customize:
-* the viewport breakpoints
+* viewport breakpoints
+* breakpoint titles
 * number of columns
 * gutter width
 * container width
