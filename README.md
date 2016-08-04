@@ -1,13 +1,15 @@
 # Sass-grid
 A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert Pellens](http://twitter.com/gpellens). A **demo** can be found in `index.html`.
 
-##Installation
+##1. Installation
 
 * Import Sass files in your Sass setup...
 * Define your grid settings in *grid.scss*
 * Compile Sass files
 
-##1. Column based grid
+##2. Examples
+
+###2.1 Column based grid
 
     <div class="row">
 
@@ -21,7 +23,7 @@ A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert
 
     </div>
 
-##2. Percentage based grid
+###2.2 Percentage based grid
 
     <div class="row">
 
