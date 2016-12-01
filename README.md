@@ -3,6 +3,7 @@ A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert
 
 ##1. Installation
 
+* Install [Compass](http://compass-style.org)
 * Import Sass files in your Sass setup...
 * Define your grid settings in *grid.scss*
 * Compile Sass files
