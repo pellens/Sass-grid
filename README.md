@@ -1,5 +1,5 @@
 # Sass-grid
-A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert Pellens](http://twitter.com/gpellens). A **demo** can be found in `index.html`.
+A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert Pellens](http://twitter.com/gpellens). Checkout the available [demo](https://pellens.github.io/Sass-grid/).
 
 ##1. Installation
 
