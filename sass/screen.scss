@@ -1,0 +1,27 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "grid";
+
+html, body {
+    font-family: Helvetica;
+    font-size: 13px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+*[class*='col-'] {
+    padding:20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #EEE;
+}
+*[class*='grid-'] {
+    padding:20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #CCC;
+}

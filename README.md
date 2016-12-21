@@ -3,10 +3,12 @@ A Sass based grid system - columns &amp; percentage. Created in Belgium by [Gert
 
 ##1. Installation
 
-* Install [Compass](http://compass-style.org)
-* Import Sass files in your Sass setup...
-* Define your grid settings in *grid.scss*
-* Compile Sass files
+	$ git clone https://github.com/pellens/Sass-grid.git
+	$ cd /Sass-grid
+	$ compass install compass
+	$ compass watch
+ 
+Make sure you are able to install [Compass](http://compass-style.org) and have defined your grid settings in `/sass/grid.scss`.
 
 ##2. Examples
 
